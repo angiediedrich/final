@@ -2,14 +2,16 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Snook Inn - Gallery</title>
+    <title>Snook Inn</title>
 
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/lightbox.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.horizontalNav.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
   </head>
   <body>
     <div class="wrapper group">
@@ -51,8 +53,10 @@
       </section>
 
       <section class="main-content">
-        <h2>Welcome</h2>
-        <p class="welcome">Welcome to the World Famous Snook Inn Restaurant and Chickee Bar! Come by boat or by car - enjoy the boats, docks and magnificent views while dining at Snook Inn.</p>
+        <div class="wow fadeInRight">
+          <h2 class="animateme" data-when="enter" data-from="0.5" data-to="0" data-translatex="-200" data-rotatez="90">Welcome</h2>
+          <p class="welcome animateme">Welcome to the World Famous Snook Inn Restaurant and Chickee Bar! Come by boat or by car - enjoy the boats, docks and magnificent views while dining at Snook Inn.</p>
+        </div>
         <div class="button">
           <button onclick="location.href='menus/menu.html'" type="button" class="menu-button">Explore Our Menus!</button>
         </div>
