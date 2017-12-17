@@ -4,27 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Snook Inn - Gallery</title>
 
-    <link href="../css/main.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../css/colorbox.css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/lightbox.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="../jquery/jquery.colorbox.js"></script>
-    <script>
-      $(document).ready(function(){
-        //Examples of how to assign the Colorbox event to elements
-        $(".group2").colorbox({rel:'group2', transition:"fade"});
-        
-        //Example of preserving a JavaScript event for inline calls.
-        $("#click").click(function(){ 
-          $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-          return false;
-        });
-
-        $(function () {
-        $(".group2").colorbox({iframe:true, width:800, height:auto, innerWidth:425, innerHeight:344});    
-        })
-      });
-    </script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/lightbox.min.js"></script>
   </head>
   <body>
     <div class="wrapper group">
@@ -49,57 +33,59 @@
 
       <section class="feature-image">
         <div class="main-image">
-          <img src="https://scontent.ffcm1-2.fna.fbcdn.net/v/t31.0-8/19467968_1382884395081120_678350587100194334_o.jpg?oh=6b01c7b0ad9fdd38b9c27535f00a65af&oe=5A69CDBD" alt="Snook Inn Image">
+          <a href="https://scontent.ffcm1-2.fna.fbcdn.net/v/t31.0-8/19467968_1382884395081120_678350587100194334_o.jpg?oh=6b01c7b0ad9fdd38b9c27535f00a65af&oe=5A69CDBD" data-lightbox="gallery">
+            <img src="https://scontent.ffcm1-2.fna.fbcdn.net/v/t31.0-8/19467968_1382884395081120_678350587100194334_o.jpg?oh=6b01c7b0ad9fdd38b9c27535f00a65af&oe=5A69CDBD" alt="Snook Inn Image">
+          </a>
         </div>
       </section>
 
       <section class="gallery-content">
         <h2>Gallery</h2>
-        <a class="group2" href="../img/img1.jpg">
-          <img class="gallery-images" src="../img/img1.jpg">
+        <a class="group2" href="../img/img1.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img1-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img2.jpg">
-          <img class="gallery-images" src="../img/img2.jpg">
+        <a class="group2" href="../img/img2.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img2-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img3.jpg">
-          <img class="gallery-images" src="../img/img3.jpg">
+        <a class="group2" href="../img/img3.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img3-thumb.jpg">
         </a>
         
-        <a class="group2" href="../img/img4.jpg">
-          <img class="gallery-images" src="../img/img4.jpg">
+        <a class="group2" href="../img/img4.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img4-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img5.jpg">
-          <img class="gallery-images" src="../img/img5.jpg">
+        <a class="group2" href="../img/img5.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img5-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img6.jpg">
-          <img class="gallery-images" src="../img/img6.jpg">
+        <a class="group2" href="../img/img6.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img6-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img7.jpg">
-          <img class="gallery-images" src="../img/img7.jpg">
+        <a class="group2" href="../img/img7.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img7-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img8.jpg">
-          <img class="gallery-images" src="../img/img8.png">
+        <a class="group2" href="../img/img8.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img8-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img9.jpg">
-          <img class="gallery-images" src="../img/img9.jpg">
+        <a class="group2" href="../img/img9.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img9-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img10.jpg">
-          <img class="gallery-images" src="../img/img10.jpg">
+        <a class="group2" href="../img/img10.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img10-thumb.jpg">
         </a>
 
-        <a class="group2" href="../img/img11.jpg">
-          <img class="gallery-images" src="../img/img11.jpg">
+        <a class="group2" href="../img/img11.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img11-thumb.jpg">
         </a>
-        <a class="group2" href="../img/img12.jpg">
-          <img class="gallery-images" src="../img/img12.jpeg">
+        <a class="group2" href="../img/img12.jpg" data-lightbox="gallery">
+          <img class="gallery-images" src="../img/img12-thumb.jpg">
         </a>
       </section>
   </div>
