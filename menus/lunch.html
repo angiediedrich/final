@@ -2,9 +2,14 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Snook Inn - Lunch Menu</title>
-    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <title>Snook Inn - Gallery</title>
+
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/lightbox.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Raleway" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.horizontalNav.min.js"></script>
+    <script type="text/javascript" src="../js/lightbox.min.js"></script>
   </head>
   <body>
     <div class="wrapper group">
@@ -13,18 +18,30 @@
           <h1>Snook Inn</h1>
         </div>
 
-        <nav class="main-nav">
-          <input type="checkbox" name="menu-controller-checkbox" id="menu-controller-checkbox" class="menu-controller-checkbox" value="value">
-          <ul class="nav">
-            <li><a href="../index.html" id="BtnAbout" class="nav-button">HOME</a></li>
-            <li><a href="cocktails.html" id="BtnArticles" class="nav-button">COCKTAILS</a></li>
-            <li><a href="#lunch.html" id="BtnArticles" class="nav-button">LUNCH</a></li>
-            <li><a href="dinner.html" id="BtnArticles" class="nav-button">DINNER</a></li>
-            <li><a href="../gallery/gallery.html" id="BtnArticles" class="nav-button">GALLERY</a></li>
-            <li><a href="../about/about.html" id="BtnAbout" class="nav-button">ABOUT</a></li>
-            <li><a href="../contact/contact.html" id="BtnContact" class="nav-button">CONTACT</a></li>
-          </ul>
-        </nav>
+        <div class="nav-wrapper">
+          <nav class="mobile-nav">
+            <ul>
+              <li><a class="nav-btn" href="../index.html">HOME</a></li>
+              <li><a class="nav-btn" href="cocktails.html">COCKTAILS</a></li>
+              <li><a class="nav-btn" href="#lunch.html">LUNCH</a></li>
+              <li><a class="nav-btn" href="dinner.html">DINNER</a></li>
+              <li><a class="nav-btn" href="../gallery/gallery.html">GALLERY</a></li>
+              <li><a class="nav-btn" href="../about/about.html">ABOUT</a></li>
+              <li><a class="nav-btn" href="../contact/contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <nav class="horizontal-nav full-width horizontalNav-notprocessed">
+            <ul>
+              <li><a class="nav-btn" href="../index.html">HOME</a></li>
+              <li><a class="nav-btn" href="cocktails.html">COCKTAILS</a></li>
+              <li><a class="nav-btn" href="#lunch.html">LUNCH</a></li>
+              <li><a class="nav-btn" href="dinner.html">DINNER</a></li>
+              <li><a class="nav-btn" href="../gallery/gallery.html">GALLERY</a></li>
+              <li><a class="nav-btn" href="../about/about.html">ABOUT</a></li>
+              <li><a class="nav-btn" href="../contact/contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <section class="feature-image">
@@ -124,5 +141,14 @@
             <p class="social">Follow Us: <em>Facebook</em> | <em>Instagram</em> </p>
           </div>
         </footer>
+    
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="bd.jquery.min.js"%3E%3C/script%3E'))</script>
+
+    <!-- JavaScript -->
+    <script src="../js/bd.ui.js"></script>
+    <script src="../js/jquery.horizontalNav.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
   </body>
 </html>
