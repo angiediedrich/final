@@ -27,40 +27,67 @@ img {
 #logo {
   font-size: 1.3em;
   float: left;
-  padding: 1em;
-  margin: 1em;
+  width: 300px;
+  text-align: center;
+  padding: 1em 0;
+  margin: .2em;
   border: double 12px white;
   text-transform: uppercase;
 }
 
-.nav {
-    list-style-type: none;
-    width: 85%;
-}
+/*Navigation*/
 
-.nav li:first-child {
-  margin-left: 2em;
-}
-
-.nav li {
+.horizontal-nav {
+  width: 65%;
   float: left;
-  padding: 3.2em 1em 0 1em;
-  font-family: sans-serif;
+  border-radius: 6px;
 }
 
-.nav li a {
-  color: white;
-  text-decoration: none;
+.horizontal-nav ul {
+  list-style: none;
+  float: left;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #0e7079;
 }
 
-.nav li a:hover {
-  text-decoration: underline;
+.horizontal-nav ul li {
+  float: left;
+  border-left: 1px solid #0e7079;
 }
 
-.menu-controller-checkbox {
-  display: none; }
+.horizontal-nav ul li:first-child {
+  border-left: 0 none;
+}
 
-  .title {
+.horizontal-nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  border-top: 1px solid rgba(255,255,255, 0.25);
+  border-left: 1px solid rgba(255,255,255, 0.25);
+}
+.horizontal-nav ul li:first-child a {
+  border-left: 0 none;
+}
+
+.horizontal-nav ul li a:hover {
+  background: #2fa9aa;
+}
+
+.horizontal-nav ul li:first-child a {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.horizontal-nav ul li:last-child a {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+
+
+ .title {
     font-size: 2.1em;
     margin-top: 2em;
     text-transform: uppercase;
@@ -150,7 +177,6 @@ button {
   border: 1px solid white;
   margin: auto;
   overflow: auto;
-
 }
 
 .gallery-content a {
@@ -166,16 +192,11 @@ button {
 
 .gallery-images {
   float: left;
-
   margin: 1em;
   display: block;
   text-align: center;
 }
-*/
 
-.maxWidth {
-  width:;
-}
 
 figure {
      position: relative;
